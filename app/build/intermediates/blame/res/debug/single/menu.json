@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Bobo\\AndroidStudioProjects\\GetPostDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\Bobo\\AndroidStudioProjects\\GetPostDemo-master\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bobo\\AndroidStudioProjects\\LeakDetectionSystem\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\Bobo\\AndroidStudioProjects\\LeakDetectionSystem\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]

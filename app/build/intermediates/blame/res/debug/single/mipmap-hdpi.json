@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Bobo\\AndroidStudioProjects\\GetPostDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Bobo\\AndroidStudioProjects\\GetPostDemo-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bobo\\AndroidStudioProjects\\LeakDetectionSystem\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Bobo\\AndroidStudioProjects\\LeakDetectionSystem\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]
