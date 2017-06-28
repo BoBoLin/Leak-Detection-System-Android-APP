@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laySwipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lstData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Button 置底 -->
+
+    <!--<Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:layout_below="@+id/test_bottom_buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />-->
+
+    <Button
+        android:text="Go Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_page_2"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/position_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:id="@+id/ScrollTable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/position_info"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScrollTable"
+        android:shrinkColumns="4">
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/broken_title"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:padding="5dip"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="時間與地點" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired_title"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="狀態"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history1"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired1"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history2"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired2"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history3"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired3"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history4"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired4"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history5"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired5"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history6"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:padding="5dip"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired6"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history7"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired7"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history8"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired8"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history9"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired9"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:minHeight="40dip" android:gravity="center">
+
+            <TextView
+                android:id="@+id/history10"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+            <TextView
+                android:id="@+id/repaired10"
+                android:padding="5dip"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/position_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarDefaultDelayBeforeFade="999"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+
+    <!-- <ListView
+         android:layout_width="match_parent"
+         android:layout_height="350dp"
+         android:id="@+id/history_list"
+         android:layout_marginTop="54dp"
+         android:layout_below="@+id/table"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />-->
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_first"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="hu.markcool.getpostdemo.MainActivity"
+        android:layout_below="@+id/to_page_2" />-->
+
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
